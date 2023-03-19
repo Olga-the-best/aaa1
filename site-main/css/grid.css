@@ -1,0 +1,46 @@
+.container{
+    display: grid;
+    grid-template-rows: repeat(8,5vw);
+    /* определяет высоту строки */
+    gap: 1rem 2rem;
+    /* расстояние между колонками */
+    grid-template-columns: repeat(8,1fr)
+    /* определяют ширину еолонки */
+
+
+
+}
+.item{
+    background: red;
+    border: 1px solid black;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item-1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.item-2{
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+}
+.item-3{
+    grid-column: 5 / -1;
+    /* последняя линия */
+    grid-row: 1 / -1;
+}
+.item-4{
+    grid-column: 1 / 5;
+    grid-row: 3 / 6;
+}
+.item-5{
+    grid-column: 1 / 5;
+    grid-row:  6 / -1;
+}
+.item-6{
+    grid-column: 1 / 5 ;
+    grid-row: 3 / 6 ;
+}
